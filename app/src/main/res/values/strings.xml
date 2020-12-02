@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">RefrigeratorManager</string>
+    <string name="title">冷蔵庫マネージャー</string>
+    <string name="cd_top_image">冷蔵庫マネージャートップ画面です</string>
+    <string name="to_ref_top">冷蔵庫トップへ</string>
+    <string name="add_ref">冷蔵庫追加</string>
+    <string name="ref_name">冷蔵庫の名前</string>
+    <string name="ref_door_count">冷蔵庫のドア数</string>
+    <string-array name="door_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="genre_list">
+        <item>1 : 野菜</item>
+        <item>2 : 肉</item>
+        <item>3 : 魚</item>
+        <item>4 : 調味料</item>
+        <item>5 : 飲み物</item>
+        <item>6 : お菓子</item>
+        <item>7 : 料理</item>
+        <item>8 : 冷蔵食品</item>
+        <item>9 : 冷凍食品</item>
+        <item>0 : その他</item>
+    </string-array>
+    <string name="notice1">※ものを入れる場所の数です。\n観音開きのドアは2枚で1つと数えてください。</string>
+    <string name="notice_top">冷蔵庫を選択してください。</string>
+    <string name="placeHolder_refName">冷蔵庫名</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="btn_refTop">トップ</string>
+    <string name="btn_registerItem">アイテム登録</string>
+    <string name="btn_search">検索</string>
+    <string name="ins_date">入れた日 : </string>
+    <string name="empire_date_text">期限 :</string>
+    <string name="item_name_text">アイテム名 :</string>
+    <string name="genre_text">種別 :</string>
+    <string name="memo_text">メモ :</string>
+    <string name="remain_text">残量 :</string>
+    <string name="date_picker">日付を選択する</string>
+    <string name="back_btn">もどる</string>
+    <string name="item_hint">アイテム名</string>
+    <string name="year_hint">2020</string>
+    <string name="month_hint">09</string>
+    <string name="date_hint">01</string>
+    <string name="memo_hint">なんでも記入してください</string>
+    <string name="slash">/</string>
+    <string name="door">ドア</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

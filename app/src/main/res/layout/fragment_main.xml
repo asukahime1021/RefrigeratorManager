@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".activity.AddRefFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFFFFFF">
+
+        <TextView
+            android:id="@+id/main_top_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/ref_name"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/editRefName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            />
+
+        <EditText
+            android:id="@+id/editRefName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@id/main_top_text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_top_text_1"
+            android:autofillHints=""
+            android:hint="@string/placeHolder_refName"/>
+
+        <TextView
+            android:id="@+id/main_top_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/ref_door_count"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@id/doorSpinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editRefName" />
+
+        <Spinner
+            android:id="@+id/doorSpinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:entries="@array/door_count"
+            app:layout_constraintBottom_toTopOf="@id/main_top_text_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_top_text_2" />
+
+        <TextView
+            android:id="@+id/main_top_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notice1"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@id/regist_ref"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/doorSpinner"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="254dp" />
+
+        <Button
+            android:id="@+id/regist_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="150dp"
+            android:text="@string/add_ref"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_top_text_3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
